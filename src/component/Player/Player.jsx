@@ -22,7 +22,7 @@ const Player = ({player,handleSelectedPlayer}) => {
             </div>
             <div className="flex justify-between items-center">
                 <h1>Price : ${price}</h1>
-                <button onClick={()=>{handleSelectedPlayer(player)}} className="btn btn-info">Choose Player</button>
+                <button  onClick={()=>{handleSelectedPlayer(player)}} className="btn btn-info">Choose Player</button>
             </div>
 
             

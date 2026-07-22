@@ -2,7 +2,7 @@ import Available from "../Available/Available";
 import Selected from "../Selected/Selected";
 
 
-const Allplayer = ({handleIsActive,isActive,handleSelectedPlayer,selectedPlayer}) => {
+const Allplayer = ({handleIsActive,isActive,handleSelectedPlayer,selectedPlayer,handleDeletedPlayer}) => {
 
     return (
     <div>
@@ -19,7 +19,7 @@ const Allplayer = ({handleIsActive,isActive,handleSelectedPlayer,selectedPlayer}
         </div>
 
         {
-            isActive.active ?<Available handleSelectedPlayer={handleSelectedPlayer}></Available> : <Selected selectedPlayer={selectedPlayer}></Selected>
+            isActive.active ?<Available  handleSelectedPlayer={handleSelectedPlayer}></Available> : <Selected handleDeletedPlayer={handleDeletedPlayer} selectedPlayer={selectedPlayer}></Selected>
         }
     </div>
     );

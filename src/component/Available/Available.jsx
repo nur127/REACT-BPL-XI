@@ -18,7 +18,7 @@ const Available = ({handleSelectedPlayer}) => {
         <div className="md:grid grid-cols-3 gap-3">
             {/* <h1>Available : {players.length}</h1> */}
             {
-                players.map(player =><Player handleSelectedPlayer={handleSelectedPlayer} key={player.id} player={player}></Player>)
+                players.map(player =><Player  handleSelectedPlayer={handleSelectedPlayer} key={player.id} player={player}></Player>)
             }
         </div>
     );
