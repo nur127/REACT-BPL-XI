@@ -1,8 +1,9 @@
 import Logo from '../../assets/logo.png'
 import heroCover from '../../assets/bg-shadow.png'
 import cricket from '../../assets/banner-main.png'
+import { FaCoins } from "react-icons/fa";
 
-const Header = () => {
+const Header = ({handleSetMoney,money}) => {
     return (
         <div className='text-center'>
             <div className="  bg-base-100 shadow-sm flex justify-between items-center">
@@ -14,7 +15,7 @@ const Header = () => {
                     <a href='#' className="btn btn-ghost md:text-xl">Fixures</a>
                     <a href='#' className="btn btn-ghost md:text-xl">Teams</a>
                     <a href='#' className="btn btn-ghost md:text-xl">Schedules</a>
-                    <h1 className="btn btn-ghost md:text-xl ">$500 Coin</h1>
+                    <h1 className="btn btn-ghost text-[13px] md:text-xl ">${money} <FaCoins style={{ color: "#FFD700" }} /> </h1>
 
 
 
@@ -36,7 +37,7 @@ const Header = () => {
                             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                             quasi. In deleniti eaque aut repudiandae et a id nisi.
                         </p>
-                        <button className="btn btn-primary">Claim Free Credit</button>
+                        <button onClick={()=>handleSetMoney()} className="btn btn-primary">Claim Free Credit</button>
                     </div>
                 </div>
             </div>

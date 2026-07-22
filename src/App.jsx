@@ -15,6 +15,22 @@ function App() {
     // Selected Player State
     const [selectedPlayer,setSelectedPlayer] = useState([]);
 
+    // Money State
+    const [money,setMoney] = useState(0)
+    
+    const handleSetMoney =()=>{
+      setMoney(15000000)
+    }
+
+    // const handleMoneyReduction =(price)=>{
+    //   if(money>price){
+    //     setMoney(money - price)
+    //   }
+    //   else{
+    //     notifyMoneyExceed();
+
+    //   }
+    // }
 
 
 
@@ -25,6 +41,13 @@ function App() {
       autoClose: 3000,
     });
   };
+
+  const notifyMoneyExceed = ()=>{
+     toast.warning(`You don't Have Enough Money`, {
+      position: "top-center",
+      autoClose: 3000,
+    });
+  }
 
   const notifyWarning = (player) =>{
     toast.warning(`${player.playerName} is Already in Selection Menu`, {
@@ -39,6 +62,12 @@ function App() {
       autoClose: 3000,
     });
   }
+    const notifyMax = () =>{
+    toast.warning(`Already Max Number of Players Selected`, {
+      position: "top-center",
+      autoClose: 3000,
+    });
+  }
 
 
 
@@ -48,14 +77,25 @@ function App() {
       if(isExist){
         notifyWarning(player)
       }
-      else{
+      else if(!isExist && selectedPlayer.length<6 && money>player.price){
         notifySuccess(player)
         const newSelected = [...selectedPlayer,player]
         setSelectedPlayer(newSelected)
+        setMoney(money - player.price)
+      }
+      else if(money < player.price){
+        notifyMoneyExceed()
+
+      }
+      else{
+        notifyMax()
+
       }
     }
 
     const handleDeletedPlayer = (id) =>{
+      const player = selectedPlayer.find(p=>p.id==id)
+      notifyAlert(player)
       const remSelectedPlayer = selectedPlayer.filter(p=>(p.id !=id))
       setSelectedPlayer(remSelectedPlayer)
     }
@@ -82,7 +122,7 @@ function App() {
 
   return (
     <div className='max-w-7xl mx-auto'>
-      <Header></Header>
+      <Header handleSetMoney={handleSetMoney} money = {money}></Header>
       <Allplayer handleDeletedPlayer={handleDeletedPlayer}  selectedPlayer={selectedPlayer} handleSelectedPlayer={handleSelectedPlayer} handleIsActive={handleIsActive} isActive={isActive}></Allplayer>
     <ToastContainer />
     </div>

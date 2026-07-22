@@ -1,6 +1,6 @@
 import SelectedSinglePlayer from "../SelectedSinglePlayer/SelectedSinglePlayer";
 
-const Selected = ({selectedPlayer,handleDeletedPlayer}) => {
+const Selected = ({selectedPlayer,handleDeletedPlayer,handleIsActive}) => {
     return (
         <div>
             <h1>Selected:{selectedPlayer.length}</h1>
@@ -8,7 +8,7 @@ const Selected = ({selectedPlayer,handleDeletedPlayer}) => {
             {
                 selectedPlayer.map(player => <SelectedSinglePlayer handleDeletedPlayer={handleDeletedPlayer} player={player}></SelectedSinglePlayer>)
             }
-             <a href="../Available"><button className="btn btn-active bg-lime-400">Add More Player</button></a>
+             <button onClick={()=>{handleIsActive("available")}} className="btn btn-active bg-lime-400">Add More Player</button>
         </div>
     );
 };

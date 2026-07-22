@@ -19,7 +19,7 @@ const Allplayer = ({handleIsActive,isActive,handleSelectedPlayer,selectedPlayer,
         </div>
 
         {
-            isActive.active ?<Available  handleSelectedPlayer={handleSelectedPlayer}></Available> : <Selected handleDeletedPlayer={handleDeletedPlayer} selectedPlayer={selectedPlayer}></Selected>
+            isActive.active ?<Available  handleSelectedPlayer={handleSelectedPlayer}></Available> : <Selected isActive = {isActive} handleDeletedPlayer={handleDeletedPlayer} selectedPlayer={selectedPlayer} handleIsActive={handleIsActive}></Selected>
         }
     </div>
     );
