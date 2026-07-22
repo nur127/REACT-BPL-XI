@@ -5,10 +5,10 @@ import { FaCoins } from "react-icons/fa";
 
 const Header = ({ handleSetMoney, money }) => {
     return (
-        <div className='text-center'>
-            <div className="  bg-base-100 shadow-sm flex justify-between items-center">
+        <div className='text-center '>
+            <div className="  bg-base-100 shadow-sm flex justify-between items-center mb-4">
                 <div>
-                    <img className='w-10 h-10' src={Logo} alt="" />
+                    <img className='w-10 h-10 md:w-15 md:h-15 p-2'  src={Logo} alt="" />
                 </div>
                 <div className="menu menu-horizontal">
                     <a href='#' className="btn btn-ghost md:text-xl">Home</a>
@@ -23,7 +23,8 @@ const Header = ({ handleSetMoney, money }) => {
 
             </div>
             <div
-                className="hero bg-white w-full h-2/3 rounded-4xl space-y-2 text-center mt-2"
+                className="hero w-full max-h-2/3
+                 rounded-md text-center mt-2"
                 style={{
                     backgroundImage: `
         linear-gradient(180deg, rgba(0,0,0,.7) 20%, rgba(0,0,0,.2) 100%),
@@ -34,9 +35,9 @@ const Header = ({ handleSetMoney, money }) => {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="hero-overlay"></div>
-                <div className="hero-content text-neutral-content flex-col items-center text-center">
-                    <div className="max-w-md  ">
+                <div className="hero-overlay  "></div>
+                <div className="hero-content text-neutral-content flex-col items-center text-center rounded-md">
+                    <div className="max-w-md  space-y-3">
                         <img className='w-40 mx-auto' src={cricket} alt="" />
                         <h1 className='text-2xl font-bold'>Assemble Your Ultimate Dream 11 Cricket Team</h1>
                         <p className="mb-5">
