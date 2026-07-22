@@ -1,8 +1,8 @@
 
-const Selected = () => {
+const Selected = ({selectedPlayer}) => {
     return (
         <div>
-            <h1>Selected.jsx</h1>
+            <h1>Selected:{selectedPlayer.length}</h1>
         </div>
     );
 };

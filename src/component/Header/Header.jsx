@@ -10,11 +10,11 @@ const Header = () => {
                     <img className='w-10 h-10' src={Logo} alt="" />
                 </div>
                 <div className="menu menu-horizontal">
-                    <h1 className="btn btn-ghost md:text-xl">Home</h1>
-                    <h1 className="btn btn-ghost md:text-xl">Fixures</h1>
-                    <h1 className="btn btn-ghost md:text-xl">Teams</h1>
-                    <h1 className="btn btn-ghost md:text-xl">Schedules</h1>
-                    <div><h1 className="btn btn-ghost md:text-xl ">$500 Coin</h1></div>
+                    <a href='#' className="btn btn-ghost md:text-xl">Home</a>
+                    <a href='#' className="btn btn-ghost md:text-xl">Fixures</a>
+                    <a href='#' className="btn btn-ghost md:text-xl">Teams</a>
+                    <a href='#' className="btn btn-ghost md:text-xl">Schedules</a>
+                    <h1 className="btn btn-ghost md:text-xl ">$500 Coin</h1>
 
 
 
@@ -22,7 +22,7 @@ const Header = () => {
 
             </div>
             <div
-                className="hero w-full h-2/3 rounded-2xl text-center"
+                className="hero bg-white w-full h-2/3 rounded-4xl text-center mt-2"
                 style={{
                     backgroundImage:
                        ` url(${heroCover})`,
