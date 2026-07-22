@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "playerName": "Virat Sharma",
+    "nationality": "India",
+    "role": "Batsman",
+    "rating": 95,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium",
+    "price": 1800000,
+    "image": "https://i.ibb.co.com/Wvf9M1Hg/cfphotosin-photography-4hbgc-Qv9-As-unsplash-1.jpg"
+  },
+  {
+    "id": 2,
+    "playerName": "James Carter",
+    "nationality": "Australia",
+    "role": "All-rounder",
+    "rating": 91,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Left-arm Fast",
+    "price": 1650000,
+    "image": "https://i.ibb.co.com/KpWRSPvN/mudassir-ali-Dvreey-PXQww-unsplash.jpg"
+  },
+  {
+    "id": 3,
+    "playerName": "Aiden Brooks",
+    "nationality": "England",
+    "role": "Bowler",
+    "rating": 89,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Fast",
+    "price": 1450000,
+    "image": "https://i.ibb.co.com/WLw4Ct6/yogendra-singh-WJUj-Qcx0s-RM-unsplash.jpg"
+  },
+  {
+    "id": 4,
+    "playerName": "Kane Douglas",
+    "nationality": "New Zealand",
+    "role": "Batsman",
+    "rating": 92,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Off Break",
+    "price": 1720000,
+    "image": "https://i.ibb.co.com/gLH8kWcv/lucky-weerakoon-x7-RAe-WFHwu0-unsplash.jpg"
+  },
+  {
+    "id": 5,
+    "playerName": "Rashid Khanza",
+    "nationality": "Afghanistan",
+    "role": "Bowler",
+    "rating": 94,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Leg Break",
+    "price": 1900000,
+    "image": "https://i.ibb.co.com/F23DqnF/cfphotosin-photography-HJbv998de9s-unsplash.jpg"
+  },
+  {
+    "id": 6,
+    "playerName": "Babar Hassan",
+    "nationality": "Pakistan",
+    "role": "Batsman",
+    "rating": 93,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium",
+    "price": 1750000,
+    "image": "https://i.ibb.co.com/G4hFMht4/yogendra-singh-c2-URVqa-U0-A-unsplash.jpg"
+  },
+  {
+    "id": 7,
+    "playerName": "Shakib Rahman",
+    "nationality": "Bangladesh",
+    "role": "All-rounder",
+    "rating": 90,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "Left-arm Orthodox",
+    "price": 1600000,
+    "image": "https://i.ibb.co.com/JWdQczmV/alfred-kenneally-Kw8b-XVwk-SG0-unsplash.jpg"
+  },
+  {
+    "id": 8,
+    "playerName": "Liam Ferguson",
+    "nationality": "South Africa",
+    "role": "Bowler",
+    "rating": 88,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Fast",
+    "price": 1400000,
+    "image": "https://i.ibb.co.com/sdj7yzhN/alfred-kenneally-Xq-Fe-Vpr-J3j-Q-unsplash.jpg"
+  },
+  {
+    "id": 9,
+    "playerName": "Nicholas Pierre",
+    "nationality": "West Indies",
+    "role": "Wicketkeeper-Batsman",
+    "rating": 87,
+    "battingStyle": "Left-hand Bat",
+    "bowlingStyle": "None",
+    "price": 1350000,
+    "image": "https://i.ibb.co.com/S7QXrKDB/yogendra-singh-d-E3exzm-Yl-Kc-unsplash.jpg"
+  },
+  {
+    "id": 10,
+    "playerName": "Mathew O'Brien",
+    "nationality": "Ireland",
+    "role": "All-rounder",
+    "rating": 86,
+    "battingStyle": "Right-hand Bat",
+    "bowlingStyle": "Right-arm Medium Fast",
+    "price": 1250000,
+    "image": "https://i.ibb.co.com/Wvf9M1Hg/cfphotosin-photography-4hbgc-Qv9-As-unsplash-1.jpg"
+  }
+]
