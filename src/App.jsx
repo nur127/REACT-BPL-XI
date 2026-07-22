@@ -5,6 +5,8 @@ import Allplayer from './component/Allplayer/Allplayer'
 import Header from './component/Header/Header'
 import { ToastContainer,toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './component/Footer/Footer'
+import Contract from './component/Contract/Contract'
 
 function App() {
 
@@ -98,6 +100,7 @@ function App() {
       notifyAlert(player)
       const remSelectedPlayer = selectedPlayer.filter(p=>(p.id !=id))
       setSelectedPlayer(remSelectedPlayer)
+      setMoney(money+player.price)
     }
 
 
@@ -125,6 +128,10 @@ function App() {
       <Header handleSetMoney={handleSetMoney} money = {money}></Header>
       <Allplayer handleDeletedPlayer={handleDeletedPlayer}  selectedPlayer={selectedPlayer} handleSelectedPlayer={handleSelectedPlayer} handleIsActive={handleIsActive} isActive={isActive}></Allplayer>
     <ToastContainer />
+    <div className='mx-auto'>
+      <Contract></Contract>
+    </div>
+    <Footer></Footer>
     </div>
   )
 }

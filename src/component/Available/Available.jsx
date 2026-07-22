@@ -7,7 +7,7 @@ const Available = ({handleSelectedPlayer}) => {
 
 
     useEffect(()=>{
-        fetch ('../../../public/fakeData.json')
+        fetch ('./fakeData.json')
         .then (res =>res.json())
         .then(data=>setPlayers(data))
     },[])
@@ -15,7 +15,7 @@ const Available = ({handleSelectedPlayer}) => {
 
     
     return (
-        <div className="md:grid grid-cols-3 gap-3">
+        <div className="pb-40 md:grid grid-cols-3 gap-3 ">
             {/* <h1>Available : {players.length}</h1> */}
             {
                 players.map(player =><Player  handleSelectedPlayer={handleSelectedPlayer} key={player.id} player={player}></Player>)

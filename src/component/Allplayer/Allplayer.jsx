@@ -8,7 +8,7 @@ const Allplayer = ({handleIsActive,isActive,handleSelectedPlayer,selectedPlayer,
     <div>
             <div className="flex justify-between mt-4 items-center bg-slate-200 p-3 rounded-3xl">
             <div>
-                <h1 className="text-2xl font-bold"> {isActive.active ?"Available Player ":`Selected Players : ${selectedPlayer.length}`}</h1>
+                <h1 className="text-2xl font-bold"> {isActive.active ?"Available Player ":`Selected Players : ${selectedPlayer.length}/6`}</h1>
 
             </div>
             <div className="flex justify-between gap-3">
